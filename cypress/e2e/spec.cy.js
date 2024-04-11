@@ -3,7 +3,7 @@ describe('Sause Demo Test', () => {
   it('Invalid Login Verification', () => {
     cy.visit('https://www.saucedemo.com')
     cy.get('[data-test="username"]')
-    cy.get("#user-name").type('test')
+    cy.get("#user-name").type('test1')
     cy.get("#password").type('123')
     cy.get("#login-button").click()
     cy.get("h3[data-test='error']").invoke('text').then((text1) => {
